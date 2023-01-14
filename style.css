@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(116, 194, 230, 0.651);
+}
+
+
+.main {
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    animation: redone;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes redone {
+    0% {top: -300px; }
+    100% {top: 0px; }
+}
+
+
+#yellow {
+    opacity: 1;
+    background-color: yellow;  
+    position: relative;
+    animation: yeltwo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes yeltwo {
+    0% {opacity: 0.1;}
+    20% {opacity: 1;}
+    40% {opacity: 0.1;}
+    60% {opacity: 1;}
+    80% {opacity: 0.1;}
+    100% {opacity: 1;}
+}
+
+
+#green {
+    background-color: rgb(47, 243, 47);
+    position: relative;
+    animation: greenthree;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes greenthree {
+    0% {transform: rotateY(540deg);}
+    20% {transform: rotateY(0deg);}
+    40% {transform: rotateY(360deg);}
+    60% {transform: rotateY(0deg);}
+    80% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+
+}
+/*HINT -   transform: rotateY(0deg);*/
